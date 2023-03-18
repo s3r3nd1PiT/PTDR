@@ -24,6 +24,47 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function loadGiscus(containerId, repo, repoId, term) {
+        var giscus = document.createElement('script');
+        giscus.type = 'text/javascript';
+        giscus.src = 'https://giscus.app/client.js';
+        giscus.async = true;
+        giscus.setAttribute('data-repo', repo);
+        giscus.setAttribute('data-repo-id', repoId);
+        giscus.setAttribute('data-mapping', 'number');
+        giscus.setAttribute('data-term', term);
+        giscus.setAttribute('data-emit-metadata', '0');
+        giscus.setAttribute('data-theme', 'dark');
+        giscus.setAttribute('data-reactions-enabled', '1');
+        giscus.setAttribute('data-issue-term', 'pathname');
+        giscus.setAttribute('crossorigin', 'anonymous');
+        var container = document.getElementById(containerId);
+        container.appendChild(giscus);
+      }
+
+      setTimeout(function(){
+        loadGiscus('giscus-container-1', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '1');
+      }, 1000);
+      setTimeout(function(){
+        loadGiscus('giscus-container-2', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '2');
+      }, 2000);
+      setTimeout(function(){
+        loadGiscus('giscus-container-3', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '3');
+      }, 3000);
+      setTimeout(function(){
+        loadGiscus('giscus-container-4', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '4');
+      }, 4000);
+      setTimeout(function(){
+        loadGiscus('giscus-container-5', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '5');
+      }, 5000);
+      setTimeout(function(){
+        loadGiscus('giscus-container-6', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '6');
+      }, 6000);
+      setTimeout(function(){
+        loadGiscus('giscus-container-7', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '7');
+      }, 7000);
+    </script>
     <style type="text/css">
 
 /* Why overiding default bootstrap colorscheme with similar colors and removing yellow? Good question! 
@@ -270,28 +311,6 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                 > parfaite
                 > accrochante
 
-
-                    <script>
-                      setTimeout(function() {
-                        var giscus1 = document.createElement("script");
-                        giscus1.src = "https://giscus.app/client.js";
-                        giscus1.id = "giscus1";
-                        giscus1.setAttribute("data-repo", "s3r3nd1PiT/ptdr");
-                        giscus1.setAttribute("data-repo-id", "R_kgDOJLRAQw");
-                        giscus1.setAttribute("data-mapping", "number");
-                        giscus1.setAttribute("data-term", "1");
-                        giscus1.setAttribute("data-strict", "1");
-                        giscus1.setAttribute("data-reactions-enabled", "1");
-                        giscus1.setAttribute("data-emit-metadata", "0");
-                        giscus1.setAttribute("data-input-position", "bottom");
-                        giscus1.setAttribute("data-theme", "dark");
-                        giscus1.setAttribute("data-lang", "fr");
-                        giscus1.setAttribute("crossorigin", "anonymous");
-                        giscus1.async = true;
-                        document.getElementById("giscus-container-1").appendChild(giscus1);
-                      }, 1000); // Delay time in milliseconds
-                    </script>
-
                     <div id="giscus-container-1"></div>
 
 
@@ -371,27 +390,6 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                 Articulation des différents éléments du cadre théorique, pratique et appliqué
                 Qu'est-ce qui existe ? Qu'est-ce qui se fait ? Peut-on et doit-on reproduire ou bien adapter ?
 
-              <script>
-              setTimeout(function() {
-                var giscus2 = document.createElement("script");
-                giscus2.src = "https://giscus.app/client.js";
-                giscus2.id = "giscus2";
-                giscus2.setAttribute("data-repo", "s3r3nd1PiT/ptdr");
-                giscus2.setAttribute("data-repo-id", "R_kgDOJLRAQw");
-                giscus2.setAttribute("data-mapping", "number");
-                giscus2.setAttribute("data-term", "2");
-                giscus2.setAttribute("data-strict", "1");
-                giscus2.setAttribute("data-reactions-enabled", "1");
-                giscus2.setAttribute("data-emit-metadata", "0");
-                giscus2.setAttribute("data-input-position", "bottom");
-                giscus2.setAttribute("data-theme", "dark");
-                giscus2.setAttribute("data-lang", "fr");
-                giscus2.setAttribute("crossorigin", "anonymous");
-                giscus2.async = true;
-                document.getElementById("giscus-container-2").appendChild(giscus2);
-              }, 1000); // Delay time in milliseconds
-              </script>
-
               <div id="giscus-container-2"></div>
 
 
@@ -469,27 +467,6 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
                 Problématisation : formulation d'un questionnement, d'une réflexion, d'un cheminement intellectuel pour apporter des éléments de réponse à un ensemble de questions que l'on se pose
                 Formulation d'attentes, d'hypothèses ou d'objectifs à atteindre en les vérifiant scientifiquement, en fonction de la démarche de recherche et de la méthodologie mise en œuvre pour ce faire
-
-              <script>
-              setTimeout(function() {
-                var giscus3 = document.createElement("script");
-                giscus3.src = "https://giscus.app/client.js";
-                giscus3.id = "giscus3";
-                giscus3.setAttribute("data-repo", "s3r3nd1PiT/ptdr");
-                giscus3.setAttribute("data-repo-id", "R_kgDOJLRAQw");
-                giscus3.setAttribute("data-mapping", "number");
-                giscus3.setAttribute("data-term", "3");
-                giscus3.setAttribute("data-strict", "1");
-                giscus3.setAttribute("data-reactions-enabled", "1");
-                giscus3.setAttribute("data-emit-metadata", "0");
-                giscus3.setAttribute("data-input-position", "bottom");
-                giscus3.setAttribute("data-theme", "dark");
-                giscus3.setAttribute("data-lang", "fr");
-                giscus3.setAttribute("crossorigin", "anonymous");
-                giscus3.async = true;
-                document.getElementById("giscus-container-3").appendChild(giscus3);
-              }, 1000); // Delay time in milliseconds
-              </script>
 
               <div id="giscus-container-3"></div>
 
@@ -571,27 +548,6 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                 🔧 Instrumentation
                 ⚗️ Déroulement de l’expérimentation
 
-              <script>
-              setTimeout(function() {
-                var giscus4 = document.createElement("script");
-                giscus4.src = "https://giscus.app/client.js";
-                giscus4.id = "giscus4";
-                giscus4.setAttribute("data-repo", "s3r3nd1PiT/ptdr");
-                giscus4.setAttribute("data-repo-id", "R_kgDOJLRAQw");
-                giscus4.setAttribute("data-mapping", "number");
-                giscus4.setAttribute("data-term", "4");
-                giscus4.setAttribute("data-strict", "1");
-                giscus4.setAttribute("data-reactions-enabled", "1");
-                giscus4.setAttribute("data-emit-metadata", "0");
-                giscus4.setAttribute("data-input-position", "bottom");
-                giscus4.setAttribute("data-theme", "dark");
-                giscus4.setAttribute("data-lang", "fr");
-                giscus4.setAttribute("crossorigin", "anonymous");
-                giscus4.async = true;
-                document.getElementById("giscus-container-4").appendChild(giscus4);
-              }, 1000); // Delay time in milliseconds
-              </script>
-
               <div id="giscus-container-4"></div>
 
 
@@ -664,27 +620,6 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   Présentation et analyse des résultats (valide, fiable, avec rigueur scientifique) Démonstration de la qualité scientifique de la démarche, même si les résultats ne sont pas ce qui était attendu, prévu, anticipé ou espéré ... 
                   Écriture très normalisée selon les méthodes choisies (qualitatives, quantitatives, mixtes) 
                   Il n'y aucune observation subjective, remarque ou phrase qui n'est pas directement en lien avec les résultats et leur interprétation pragmatique dans cette partie, l'écriture est linéaire et purement descriptive/opérationnelle
-
-                <script>
-                setTimeout(function() {
-                  var giscus5 = document.createElement("script");
-                  giscus5.src = "https://giscus.app/client.js";
-                  giscus5.id = "giscus5";
-                  giscus5.setAttribute("data-repo", "s3r3nd1PiT/ptdr");
-                  giscus5.setAttribute("data-repo-id", "R_kgDOJLRAQw");
-                  giscus5.setAttribute("data-mapping", "number");
-                  giscus5.setAttribute("data-term", "5");
-                  giscus5.setAttribute("data-strict", "1");
-                  giscus5.setAttribute("data-reactions-enabled", "1");
-                  giscus5.setAttribute("data-emit-metadata", "0");
-                  giscus5.setAttribute("data-input-position", "bottom");
-                  giscus5.setAttribute("data-theme", "dark");
-                  giscus5.setAttribute("data-lang", "fr");
-                  giscus5.setAttribute("crossorigin", "anonymous");
-                  giscus5.async = true;
-                  document.getElementById("giscus-container-5").appendChild(giscus5);
-                }, 1000); // Delay time in milliseconds
-                </script>
 
                 <div id="giscus-container-5"></div>
 
@@ -760,27 +695,6 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
                     Travail original ? Résultats contre-intuitif ? Éclairages nouveaux ?
                     Résultats > Analyses > retour sur la littérature
-
-                  <script>
-                  setTimeout(function() {
-                    var giscus6 = document.createElement("script");
-                    giscus6.src = "https://giscus.app/client.js";
-                    giscus6.id = "giscus6";
-                    giscus6.setAttribute("data-repo", "s3r3nd1PiT/ptdr");
-                    giscus6.setAttribute("data-repo-id", "R_kgDOJLRAQw");
-                    giscus6.setAttribute("data-mapping", "number");
-                    giscus6.setAttribute("data-term", "6");
-                    giscus6.setAttribute("data-strict", "1");
-                    giscus6.setAttribute("data-reactions-enabled", "1");
-                    giscus6.setAttribute("data-emit-metadata", "0");
-                    giscus6.setAttribute("data-input-position", "bottom");
-                    giscus6.setAttribute("data-theme", "dark");
-                    giscus6.setAttribute("data-lang", "fr");
-                    giscus6.setAttribute("crossorigin", "anonymous");
-                    giscus6.async = true;
-                    document.getElementById("giscus-container-6").appendChild(giscus6);
-                  }, 1000); // Delay time in milliseconds
-                  </script>
 
                   <div id="giscus-container-6"></div>
 
@@ -859,27 +773,6 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   Résumé du manuscrit/synthèse en quelques lignes chapitre par chapitre ; on est parti de là, on a fait ça, on en est là...
                   Synthèse des ou de la contribution
                   Tenter une ouverture, montrer qu'il y a de la suite possible dans les idées rassemblées et mises en œuvre tout au long du travail (=transformation)
-
-                <script>
-                setTimeout(function() {
-                  var giscus7 = document.createElement("script");
-                  giscus7.src = "https://giscus.app/client.js";
-                  giscus7.id = "giscus7";
-                  giscus7.setAttribute("data-repo", "s3r3nd1PiT/ptdr");
-                  giscus7.setAttribute("data-repo-id", "R_kgDOJLRAQw");
-                  giscus7.setAttribute("data-mapping", "number");
-                  giscus7.setAttribute("data-term", "7");
-                  giscus7.setAttribute("data-strict", "1");
-                  giscus7.setAttribute("data-reactions-enabled", "1");
-                  giscus7.setAttribute("data-emit-metadata", "0");
-                  giscus7.setAttribute("data-input-position", "bottom");
-                  giscus7.setAttribute("data-theme", "dark");
-                  giscus7.setAttribute("data-lang", "fr");
-                  giscus7.setAttribute("crossorigin", "anonymous");
-                  giscus7.async = true;
-                  document.getElementById("giscus-container-7").appendChild(giscus7);
-                }, 1000); // Delay time in milliseconds
-                </script>
 
                 <div id="giscus-container-7"></div>
 
