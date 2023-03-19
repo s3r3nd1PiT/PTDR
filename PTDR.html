@@ -24,47 +24,6 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      function loadGiscus(containerId, repo, repoId, term) {
-        var giscus = document.createElement('script');
-        giscus.type = 'text/javascript';
-        giscus.src = 'https://giscus.app/client.js';
-        giscus.async = true;
-        giscus.setAttribute('data-repo', repo);
-        giscus.setAttribute('data-repo-id', repoId);
-        giscus.setAttribute('data-mapping', 'number');
-        giscus.setAttribute('data-term', term);
-        giscus.setAttribute('data-emit-metadata', '0');
-        giscus.setAttribute('data-theme', 'dark');
-        giscus.setAttribute('data-reactions-enabled', '1');
-        giscus.setAttribute('data-issue-term', 'pathname');
-        giscus.setAttribute('crossorigin', 'anonymous');
-        var container = document.getElementById(containerId);
-        container.appendChild(giscus);
-      }
-
-      setTimeout(function(){
-        loadGiscus('giscus-container-1', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '1');
-      }, 1000);
-      setTimeout(function(){
-        loadGiscus('giscus-container-2', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '2');
-      }, 2000);
-      setTimeout(function(){
-        loadGiscus('giscus-container-3', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '3');
-      }, 3000);
-      setTimeout(function(){
-        loadGiscus('giscus-container-4', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '4');
-      }, 4000);
-      setTimeout(function(){
-        loadGiscus('giscus-container-5', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '5');
-      }, 5000);
-      setTimeout(function(){
-        loadGiscus('giscus-container-6', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '6');
-      }, 6000);
-      setTimeout(function(){
-        loadGiscus('giscus-container-7', 's3r3nd1PiT/ptdr', 'R_kgDOJLRAQw', '7');
-      }, 7000);
-    </script>
     <style type="text/css">
 
 /* Why overiding default bootstrap colorscheme with similar colors and removing yellow? Good question! 
@@ -311,8 +270,9 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                 > parfaite
                 > accrochante
 
-                    <div id="giscus-container-1"></div>
-
+                    <div id="giscus-container-1" class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="assets/giscus/giscus1.html" allowfullscreen></iframe>
+                    </div>
 
                     </div>
                   </div>
@@ -390,7 +350,9 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                 Articulation des différents éléments du cadre théorique, pratique et appliqué
                 Qu'est-ce qui existe ? Qu'est-ce qui se fait ? Peut-on et doit-on reproduire ou bien adapter ?
 
-              <div id="giscus-container-2"></div>
+                    <div id="giscus-container-2" class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="assets/giscus/giscus2.html" allowfullscreen></iframe>
+                    </div>
 
 
               </div>
