@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="📝 Plan Type De Recherche">
     <title>✍️😅 PTDR</title>
-    <link rel="icon" href="assets/img/p-favicon.ico">
-    <meta property="og:title" content="Plan Type De Recherche" />
+    <link rel="icon" href="assets/img/favicon.ico">
+    <meta property="og:title" content="🔍 Plan Type De Recherche" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="https://picsum.photos/200/300" />
+    <meta property="og:url" content="https://s3r3nd1pit.github.io/ptdr/PTDR.html" />
+    <meta property="og:image" content="assets/img/PTDR.png" />
     <!--CSS-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://inspe-master-meef-neo.github.io/ametice/customs/BetterCall🟣.css">
@@ -24,92 +24,218 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <style type="text/css">
+      
+      <style type="text/css">
 
-/* Why overiding default bootstrap colorscheme with similar colors and removing yellow? Good question! 
-Please next time add your own scheme and don't replace bootstrap defaults... */
-/* UNOVERIDING */
-.alert-warning, .environmenttable .warn {
-    color: #856404;
-    background-color: #fff3cd;
-    border-color: ##ffeeba;
-}
-.alert-warning hr, .environmenttable .warn hr {
-    border-top-color: #ffe8a1;
-}
-.alert-warning .alert-link, .environmenttable .warn .alert-link {
-    color: #856404;
-}
-.alert-danger, .environmenttable .error {
-    color: #721c24;
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-}
-.alert-danger hr, .environmenttable .error hr {
-    border-top-color: #eab1a3;
-}
-.alert-danger .alert-link, .environmenttable .error .alert-link {
-    color: #721c24;
-}
-.alert-light {
-    color: #818182;
-    background-color: #fefefe;
-    border-color: #fdfdfe;
-}
-.alert-light hr {
-    border-top-color: #ececf6;
-}
-.alert-light .alert-link {
-    color: #686868;
-}
-.alert-dark {
-    color: #1b1e21;
-    background-color: #d6d8d9;
-    border-color: #c6c8ca;
-}
-.alert-dark hr {
-    border-top-color: #b9bbbe;
-}
-.alert-dark .alert-link {
-    color: #040505;
-}
-/* UNOVERIDING */
+        .card-big-shadow {
+            max-width: 320px;
+            position: relative;
+        }
 
-      .blockquote-custom {
-        position: relative;
-        font-size: 1.1rem;
+        .coloured-cards .card {
+            margin-top: 30px;
+        }
+
+        .card[data-radius="none"] {
+            border-radius: 0px;
+        }
+
+        .card[data-background="image"] .title, .card[data-background="image"] .stats, .card[data-background="image"] .category, .card[data-background="image"] .description, .card[data-background="image"] .content, .card[data-background="image"] .card-footer, .card[data-background="image"] small, .card[data-background="image"] .content a, .card[data-background="color"] .title, .card[data-background="color"] .stats, .card[data-background="color"] .category, .card[data-background="color"] .description, .card[data-background="color"] .content, .card[data-background="color"] .card-footer, .card[data-background="color"] small, .card[data-background="color"] .content a {
+            color: #FFFFFF;
+        }
+        .card.card-just-text .content {
+            padding: 1em;
+            text-align: center;
+        }
+        .card .content {
+            padding: 20px 20px 10px 20px;
+        }
+        .card[data-color="blue"] .category {
+            color: #7a9e9f;
+        }
+
+        .card .category, .card .label {
+            font-size: 0.8em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .card-big-shadow:before {
+            background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            bottom: -12%;
+            content: "";
+            display: block;
+            left: -12%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 0;
+        }
+        h4, .h4 {
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 1.2em;
+        }
+        h6, .h6 {
+            font-size: 0.9em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .card .description {
+            font-size: 0.8em;
+            color: #66615b;
+        }
+        .content-card{
+            margin-top:30px;    
+        }
+        a:hover, a:focus {
+            text-decoration: none;
+        }
+
+        /*======== COLORS ===========*/
+        .card[data-color="blue"] {
+            background: #b8d8d8;
+        }
+        .card[data-color="blue"] .description {
+            color: #506568;
+        }
+
+        .card[data-color="green"] {
+            background: #d5e5a3;
+        }
+        .card[data-color="green"] .description {
+            color: #60773d;
+        }
+        .card[data-color="green"] .category {
+            color: #92ac56;
+        }
+
+        .card[data-color="yellow"] {
+            background: #ffe28c;
+        }
+        .card[data-color="yellow"] .description {
+            color: #b25825;
+        }
+        .card[data-color="yellow"] .category {
+            color: #d88715;
+        }
+
+        .card[data-color="brown"] {
+            background: #d6c1ab;
+        }
+        .card[data-color="brown"] .description {
+            color: #75442e;
+        }
+        .card[data-color="brown"] .category {
+            color: #a47e65;
+        }
+
+        .card[data-color="purple"] {
+            background: #baa9ba;
+        }
+        .card[data-color="purple"] .description {
+            color: #3a283d;
+        }
+        .card[data-color="purple"] .category {
+            color: #5a283d;
+        }
+
+        .card[data-color="orange"] {
+            background: #ff8f5e;
+        }
+        .card[data-color="orange"] .description {
+            color: #772510;
+        }
+        .card[data-color="orange"] .category {
+            color: #e95e37;
+        }
+
+        /* Why overiding default bootstrap colorscheme with similar colors and removing yellow? Good question! 
+        Please next time add your own scheme and don't replace bootstrap defaults... */
+        /* UNOVERIDING */
+        .alert-warning, .environmenttable .warn {
+            color: #856404;
+            background-color: #fff3cd;
+            border-color: ##ffeeba;
+        }
+        .alert-warning hr, .environmenttable .warn hr {
+            border-top-color: #ffe8a1;
+        }
+        .alert-warning .alert-link, .environmenttable .warn .alert-link {
+            color: #856404;
+        }
+        .alert-danger, .environmenttable .error {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        .alert-danger hr, .environmenttable .error hr {
+            border-top-color: #eab1a3;
+        }
+        .alert-danger .alert-link, .environmenttable .error .alert-link {
+            color: #721c24;
+        }
+        .alert-light {
+            color: #818182;
+            background-color: #fefefe;
+            border-color: #fdfdfe;
+        }
+        .alert-light hr {
+            border-top-color: #ececf6;
+        }
+        .alert-light .alert-link {
+            color: #686868;
+        }
+        .alert-dark {
+            color: #1b1e21;
+            background-color: #d6d8d9;
+            border-color: #c6c8ca;
+        }
+        .alert-dark hr {
+            border-top-color: #b9bbbe;
+        }
+        .alert-dark .alert-link {
+            color: #040505;
+        }
+        /* UNOVERIDING */
+
+        .blockquote-custom {
+          position: relative;
+          font-size: 1.1rem;
+        }
+
+        .blockquote-custom-icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 2em;
+          left: -1em;
+        }
+
+      .blockquote-custom-avatar {
+          width: 10%;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: 0;
+          bottom: 4em
       }
 
-      .blockquote-custom-icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 2em;
-        left: -1em;
-      }
-
-    .blockquote-custom-avatar {
-        width: 10%;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        right: 0;
-        bottom: 4em
-    }
-
-    .blockquote-custom-title {
-        padding: 0.1em 1em 0.2em 1em !important;
-        margin: 0 !important;
-        border-radius: 2em;
-        position: absolute;
-        top: -1em;
-      }
+      .blockquote-custom-title {
+          padding: 0.1em 1em 0.2em 1em !important;
+          margin: 0 !important;
+          border-radius: 2em;
+          position: absolute;
+          top: -1em;
+        }
 
       .carousel-indicators li {
           border: none;
@@ -139,8 +265,9 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
         position:relative;
       }
 
-      /* correcting overides  */
-    </style>
+        /* correcting overides  */
+      </style>
+
 </head>
 
 <body style="background: var(--gray-dark);" data-spy="scroll"> <!--👚-->
@@ -179,15 +306,15 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
               <div class="card"> <!--▶️|🎟️|📁--><!--👋 Salut !-->
 
 
-                <div class="card-header" id="headingINTRO"> <!--▶️|🎫|🤯-->
+                <div class="card-header" id="SALUT"> <!--▶️|🎫|🤯-->
                   <h1 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseINTRO" aria-expanded="true" aria-controls="collapseINTRO">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSALUT" aria-expanded="true" aria-controls="collapseSALUT">
                       👋😊 Salut !
                     </button>
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseINTRO" class="collapse show" aria-labelledby="headingINTRO" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseSALUT" class="collapse show" aria-labelledby="SALUT" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
 
@@ -199,7 +326,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
               <div class="card"> <!--▶️|🎟️|📁--><!--▶️ INTRODUCTION-->
 
 
-                <div class="card-header" style="background: #a64d79;" id="headingINTRODUCTION"> <!--▶️|🎫|🤯-->
+                <div class="card-header" style="background: #a64d79;" id="INTRODUCTION"> <!--▶️|🎫|🤯-->
                   <h1 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseINTRODUCTION" aria-expanded="true" aria-controls="collapseINTRODUCTION">
                       ▶️ INTRODUCTION
@@ -207,7 +334,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseINTRODUCTION" class="collapse" style="background: #ead1dc;" aria-labelledby="headingINTRODUCTION" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseINTRODUCTION" class="collapse" style="background: #ead1dc;" aria-labelledby="INTRODUCTION" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
                     <div class="row col-lg-12 mx-auto">
@@ -254,21 +381,56 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                         <div class="alert alert-dark bg-dark text-white" role="alert">
                           ⏹ En somme, l'introduction doit être claire, concise et attrayante pour le lecteur. Elle doit donner une vue d'ensemble sur le contexte, la problématique, la question de recherche, les objectifs, les contributions et le plan de l'étude. La première phrase de l'introduction doit être particulièrement accrocheuse et intrigante pour susciter l'intérêt du lecteur.
                         </div>
+
+                    <div class="row">
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                              <strong>Motivations</strong> ?
+                              <strong>Résultats</strong> projetés?
+                              <strong>Contributions</strong> ?
+                              <i>Théoriques ? Empiriques ? Méthodologiques ?</i><br>
+                              Implications pour la recherche dans la/les discipline(s)<br>
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">🤔 Questionnements</h6>
+                              <p class="description">
+                                Tout dire ? 
+                                Laisser le mystère ?
+                                > motivation, question de recherche, annonce du plan en 1 paragraphe
+                              </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
                                                  
-                Motivations ?
-                Résultats projetés?
-                Contributions ? 
-                Théoriques ? Empiriques ? Méthodologiques ?
-                Implications pour la recherche dans la/les discipline(s) 
-                [ Sciences de l'éducation et de la formation ]
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📌 !mportant</h6>
+                              <p class="description">
+                              1ère phrase :<br>
+                              ☝ accrochante<br>
+                              👉 parfaite
+                              </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+                    </div>
 
-                Tout dire ? 
-                Laisser le mystère ?
-                > motivation, question de recherche, annonce du plan en 1 paragraphe
-
-                1ère phrase :
-                > parfaite
-                > accrochante
 
                     <div id="giscus-container-1" class="embed-responsive embed-responsive-21by9">
                       <iframe class="embed-responsive-item" src="assets/giscus/giscus1.html" allowfullscreen></iframe>
@@ -283,7 +445,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
 
               <div class="card"> <!--▶️|🎟️|📁--><!--📚 ÉTAT DE L'ART-->
-                <div class="card-header" style="background: #3c78d8;" id="headingÉTATDELART"> <!--🎫|🤯-->
+                <div class="card-header" style="background: #3c78d8;" id="ÉTATDELART"> <!--🎫|🤯-->
                   <h1 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseÉTATDELART" aria-expanded="false" aria-controls="collapseÉTATDELART">
                       📚 ÉTAT DE L'ART
@@ -291,7 +453,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseÉTATDELART" class="collapse" style="background: #c9daf8;" aria-labelledby="headingÉTATDELART" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseÉTATDELART" class="collapse" style="background: #c9daf8;" aria-labelledby="ÉTATDELART" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
                     <div class="row col-lg-12 mx-auto">
@@ -339,16 +501,63 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                           ⏹ En somme, l'état de l'art doit être une section détaillée et critique de la recherche antérieure et actuelle dans le domaine. Cette section doit montrer comment la recherche actuelle s'inscrit dans le contexte plus large et fournir une orientation pour la recherche future.
                         </div>
 
-                Revue de la littérature, cadre théorique, état de l'art...
-                "choix d'un camp", d'un parti, d'une idéologie
-                > important pour la question  de recherche, suivant le plan prévu avec des limites ou un gap à franchir clairement identifié
+                    <div class="row">
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                               Définition des concepts clés, des théories, des expérimentations, de tout ce qui se fait pour avancer sur le même objet de recherche ou des objets similaires dont on peut s'inspirer
+                               Articulation des différents éléments du cadre théorique, pratique et appliqué
+                               Qu'est-ce qui existe ? Qu'est-ce qui se fait ? Peut-on et doit-on reproduire ou bien adapter ?
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
 
-                Nécessaire & utile :
-                > question de recherche, justifier la nécessité du travail par l'état de l'existant
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                               "choix d'un camp", d'un parti, d'une idéologie
+                                > important pour la question  de recherche, suivant le plan prévu avec des limites ou un gap à franchir clairement identifié
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
 
-                Définition des concepts clés, des théories, des expérimentations, de tout ce qui se fait pour avancer sur le même objet de recherche ou des objets similaires dont on peut s'inspirer
-                Articulation des différents éléments du cadre théorique, pratique et appliqué
-                Qu'est-ce qui existe ? Qu'est-ce qui se fait ? Peut-on et doit-on reproduire ou bien adapter ?
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                               Nécessaire & utile :
+                               > question de recherche, justifier la nécessité du travail par l'état de l'existant
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">🗣️ ... on dit aussi</h6>
+                              <p class="description">                
+                               Revue de la littérature, cadre théorique, état de l'art...
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+                    </div>
 
                     <div id="giscus-container-2" class="embed-responsive embed-responsive-21by9">
                       <iframe class="embed-responsive-item" src="assets/giscus/giscus2.html" allowfullscreen></iframe>
@@ -365,7 +574,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
               <div class="card"> <!--▶️|🎟️|📁--><!--🔎 PROBLÉMATIQUE-->
 
-                <div class="card-header" style="background: #6aa84f;" id="headingPROBLÉMATIQUE"> <!--🎫|🤯-->
+                <div class="card-header" style="background: #6aa84f;" id="PROBLÉMATIQUE"> <!--🎫|🤯-->
                   <h1 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsePROBLÉMATIQUE" aria-expanded="false" aria-controls="collapsePROBLÉMATIQUE">
                       🔎 PROBLÉMATIQUE
@@ -373,7 +582,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapsePROBLÉMATIQUE" class="collapse" style="background: #d9ead3;" aria-labelledby="headingPROBLÉMATIQUE" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapsePROBLÉMATIQUE" class="collapse" style="background: #d9ead3;" aria-labelledby="PROBLÉMATIQUE" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
                     <div class="row col-lg-12 mx-auto">
@@ -421,14 +630,75 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                           ⏹ En somme, la problématique est une section cruciale du document de recherche, car elle détermine la direction de la recherche et les résultats attendus. Cette section doit être claire et précise, avec des arguments pour justifier la pertinence et l'importance de la question de recherche, ainsi que des objectifs et des hypothèses clairement définis.
                         </div>
 
+                    <div class="row">
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                              Problématisation : formulation d'un questionnement, d'une réflexion, d'un cheminement intellectuel pour apporter des éléments de réponse à un ensemble de questions que l'on se pose
+                              Formulation d'attentes, d'hypothèses ou d'objectifs à atteindre en les vérifiant scientifiquement, en fonction de la démarche de recherche et de la méthodologie mise en œuvre pour ce faire
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
 
-                Peut être intégré à la fin de l'état de l'art... parfois en fin d'introduction (en sachant ce qu'on dit dans l'état de l'art...)
-                Ce n'est pas forcément un "chapitre" ou une "partie" à part entière.
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">🎲 Emplacement ?</h6>
+                              <p class="description">                
+                              Peut être intégré à la fin de l'état de l'art... parfois en fin d'introduction (en sachant ce qu'on dit dans l'état de l'art...)
+                              Ce n'est pas forcément un "chapitre" ou une "partie" à part entière.
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
 
-                Émerge de la suite de l'état de l'art qui amène à formuler un questionnement scientifique précis que l'on va chercher à investiguer au travers de la méthodologie
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">🧐 logical thinking?</h6>
+                              <p class="description">                
+                               Émergerait bien de la suite de l'état de l'art qui amène à formuler un questionnement scientifique précis que l'on va chercher à investiguer au travers de la méthodologie ?
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
 
-                Problématisation : formulation d'un questionnement, d'une réflexion, d'un cheminement intellectuel pour apporter des éléments de réponse à un ensemble de questions que l'on se pose
-                Formulation d'attentes, d'hypothèses ou d'objectifs à atteindre en les vérifiant scientifiquement, en fonction de la démarche de recherche et de la méthodologie mise en œuvre pour ce faire
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">🇺🇸 style?</h6>
+                              <p class="description">                
+                               Le modèle de références nommé IMRaD ou IMReD en français, dit aussi du modèle en "verre à vin" 🍷 (en qui n'a rien de ressemblant à la structure du présent accordéon en verre d'eau bien rempli :) permet de simplifier tout ceci...
+                               Dans "Introduction", vous mettez tout ce qui est "Introduction"/"Problématique"/"État de l'art" dans "INTRODUCTION" et vous vous débrouillez.
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">🗣️ ... on dit aussi</h6>
+                              <p class="description">                
+                               Revue de la littérature, cadre théorique, état de l'art... éventuellement on pourrait faire un état des lieux ? un benchmark de l'existant ? un parangonnage technologique ? une veille pro-curative-active... yolo, choose your side.
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+                    </div>
 
                     <div id="giscus-container-3" class="embed-responsive embed-responsive-21by9">
                       <iframe class="embed-responsive-item" src="assets/giscus/giscus3.html" allowfullscreen></iframe>
@@ -448,7 +718,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
               <div class="card"> <!--▶️|🎟️|📁--><!--🧪 MÉTHODOLOGIE-->
 
-                <div class="card-header" style="background: #f1c232;" id="headingMÉTHODOLOGIE"> <!--🎫|🤯-->
+                <div class="card-header" style="background: #f1c232;" id="MÉTHODOLOGIE"> <!--🎫|🤯-->
                   <h1 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseMÉTHODOLOGIE" aria-expanded="false" aria-controls="collapseMÉTHODOLOGIE">
                       🧪 MÉTHODOLOGIE
@@ -456,7 +726,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseMÉTHODOLOGIE" class="collapse" style="background: #fff2cc;" aria-labelledby="headingMÉTHODOLOGIE" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseMÉTHODOLOGIE" class="collapse" style="background: #fff2cc;" aria-labelledby="MÉTHODOLOGIE" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
                     <div class="row col-lg-12 mx-auto">
@@ -506,12 +776,52 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                         <div class="alert alert-dark bg-dark text-white" role="alert">
                           ⏹ En somme, la méthodologie est une section cruciale du document de recherche, car elle décrit en détail les méthodes et les procédures utilisées pour mener la recherche. Cette section doit être claire et précise, avec des justifications pour les choix de méthodes et une reconnaissance des limites et des défis potentiels de la recherche.
                         </div>
+                
 
-                🧪 Matériels et méthodes
-                👥 Participants 
-                ☑️ Tâche
-                🔧 Instrumentation
-                ⚗️ Déroulement de l’expérimentation
+                      <div class="row">
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                                🧪 Matériels et méthodes
+                                👥 Participants
+                                ☑️ Tâche
+                                🔧 Instrumentation
+                                ⚗️ Déroulement de l’expérimentation
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category"></h6>
+                              <p class="description">                
+                                Empirique ? Présentation du design de recherche (avec un certain formalisme et des règles d'écritures normalisées)
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category"></h6>
+                              <p class="description">
+                                Où ? Quand ? Comment ? Méthodes de collecte de données ? (valide, fiable, avec rigueur scientifique)
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+                    </div>
 
                     <div id="giscus-container-4" class="embed-responsive embed-responsive-21by9">
                       <iframe class="embed-responsive-item" src="assets/giscus/giscus4.html" allowfullscreen></iframe>
@@ -529,7 +839,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
 
               <div class="card"> <!--▶️|🎟️|📁--><!--📊 RÉSULTATS-->
-                <div class="card-header" style="background: #e69138;" id="headingRÉSULTATS"> <!--▶️|🎫|🤯-->
+                <div class="card-header" style="background: #e69138;" id="RÉSULTATS"> <!--▶️|🎫|🤯-->
                   <h1 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseRÉSULTATS" aria-expanded="true" aria-controls="collapseRÉSULTATS">
                       📊 RÉSULTATS
@@ -537,7 +847,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseRÉSULTATS" class="collapse" style="background: #fce5cd;" aria-labelledby="headingRÉSULTATS" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseRÉSULTATS" class="collapse" style="background: #fce5cd;" aria-labelledby="RÉSULTATS" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
                     <div class="row col-lg-12 mx-auto">
@@ -583,11 +893,38 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
                         <div class="alert alert-dark bg-dark text-white" role="alert">
                           ⏹ En somme, la section des résultats du document de recherche présente les résultats de l'analyse de données de la recherche, interprétés et analysés pour montrer comment ils répondent à la question de recherche et aux objectifs de la recherche. Cette section doit également reconnaître les limites et les défis potentiels de la recherche.
-                        </div>
+                        </div> 
 
-                  Présentation et analyse des résultats (valide, fiable, avec rigueur scientifique) Démonstration de la qualité scientifique de la démarche, même si les résultats ne sont pas ce qui était attendu, prévu, anticipé ou espéré ... 
-                  Écriture très normalisée selon les méthodes choisies (qualitatives, quantitatives, mixtes) 
-                  Il n'y aucune observation subjective, remarque ou phrase qui n'est pas directement en lien avec les résultats et leur interprétation pragmatique dans cette partie, l'écriture est linéaire et purement descriptive/opérationnelle
+
+                      <div class="row">
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                                Démonstration de la qualité scientifique de la démarche, même si les résultats ne sont pas ce qui était attendu, prévu, anticipé ou espéré ... 
+                                Écriture très normalisée selon les méthodes choisies (qualitatives, quantitatives, mixtes) 
+                                Il n'y aucune observation subjective, remarque ou phrase qui n'est pas directement en lien avec les résultats et leur interprétation pragmatique dans cette partie, l'écriture est linéaire et purement descriptive/opérationnelle
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">✍️ Rédaction</h6>
+                              <p class="description">                
+                                Présentation et analyse des résultats (valide, fiable, avec rigueur scientifique)
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+                    </div>
 
                     <div id="giscus-container-5" class="embed-responsive embed-responsive-21by9">
                       <iframe class="embed-responsive-item" src="assets/giscus/giscus5.html" allowfullscreen></iframe>
@@ -605,7 +942,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
 
               <div class="card"> <!--▶️|🎟️|📁--><!--🗪 DISCUSSIONS-->
-                <div class="card-header" style="background: #cc0000;" id="headingDISCUSSIONS"> <!--▶️|🎫|🤯-->
+                <div class="card-header" style="background: #cc0000;" id="DISCUSSIONS"> <!--▶️|🎫|🤯-->
                   <h1 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseDISCUSSIONS" aria-expanded="true" aria-controls="collapseDISCUSSIONS">
                       🗪 DISCUSSIONS
@@ -613,7 +950,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseDISCUSSIONS" class="collapse" style="background: #f4cccc;" aria-labelledby="headingDISCUSSIONS" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseDISCUSSIONS" class="collapse" style="background: #f4cccc;" aria-labelledby="DISCUSSIONS" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
                     <div class="row col-lg-12 mx-auto">
@@ -627,10 +964,14 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                           </button>
                         </div>
 
+                        <div class="dropdown-divider py-1" style="background: #cc0000;"></div>
+                        
                         <div class="alert alert-dark bg-dark text-white" role="alert">
                           La section des discussions du document de recherche est une section importante où les résultats sont discutés en détail et où les implications de la recherche sont présentées.
                         </div>
-                      
+
+                        <div class="dropdown-divider py-1" style="background: #cc0000;"></div>
+
                      <div class="row">
                       <div class="col-4">
                         <nav id="scrollspyDISCUSSIONS" class="navbar navbar-light bg-light flex-column">
@@ -659,12 +1000,72 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                         </div>
                       </div>
                     </div>
+
+                        <div class="dropdown-divider py-1" style="background: #cc0000;"></div>
+
                         <div class="alert alert-dark bg-dark text-white" role="alert">
                           ⏹ En somme, la section des discussions est une section importante du document de recherche où les résultats sont discutés en détail et où les implications de la recherche sont présentées. Cette section doit également reconnaître les limites de la recherche et proposer des solutions pour y remédier, et présenter une conclusion qui résume les résultats et présente des recommandations pour la pratique ou pour de futures recherches.
                         </div>
 
-                    Travail original ? Résultats contre-intuitif ? Éclairages nouveaux ?
-                    Résultats > Analyses > retour sur la littérature
+                        <div class="dropdown-divider py-1" style="background: #cc0000;"></div>
+
+                        <script src="https://utteranc.es/client.js"
+                                repo="s3r3nd1PiT/ptdr"
+                                issue-term="url"
+                                label="Ouvroir de ticket"
+                                theme="github-dark-orange"
+                                crossorigin="anonymous"
+                                async>
+                        </script>
+
+                        <div class="dropdown-divider py-1" style="background: #cc0000;"></div>
+
+                      <div class="row">
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                                Rappel de la question de recherche, du problème de départ
+                                Discuter d'en quoi on fait avancer la recherche par ce travail
+                                Prendre du recul sur ce qui a été fait, montrer que l'on sait faire preuve de distance et de réflexivité sur les analyses et résultats obtenus, qu'ils soient positifs ou négatifs
+                                Éventuellement on parle de généralisation ou d'adaptation, d'amélioration, de spécification, de pistes à poursuivre pour aller plus loin encore
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                                Travail original ? Résultats contre-intuitif ? Éclairages nouveaux ?
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">✍️ Rédaction</h6>
+                              <p class="description">                
+                                Résultats > Analyses > retour sur la littérature
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    
 
                     <div id="giscus-container-6" class="embed-responsive embed-responsive-21by9">
                       <iframe class="embed-responsive-item" src="assets/giscus/giscus6.html" allowfullscreen></iframe>
@@ -683,7 +1084,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
               <div class="card"> <!--▶️|🎟️|📁--><!--⏹️ CONCLUSION-->
 
-                <div class="card-header" style="background: #a61c00;" id="headingCONCLUSION"> <!--▶️|🎫|🤯-->
+                <div class="card-header" style="background: #a61c00;" id="CONCLUSION"> <!--▶️|🎫|🤯-->
                   <h1 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseCONCLUSION" aria-expanded="true" aria-controls="collapseCONCLUSION">
                       ⏹️ CONCLUSION
@@ -691,7 +1092,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseCONCLUSION" class="collapse" style="background: #e6b8af;" aria-labelledby="headingCONCLUSION" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseCONCLUSION" class="collapse" style="background: #e6b8af;" aria-labelledby="CONCLUSION" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
                     <div class="row col-lg-12 mx-auto">
@@ -742,10 +1143,38 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                         En somme, la conclusion est la dernière section du document de recherche et doit résumer l'ensemble du travail de recherche, en présentant les résultats clés, les contributions de la recherche, les implications et les recommandations pour la pratique ou pour les recherches futures.
                         </div>
 
-                  Percutante
-                  Résumé du manuscrit/synthèse en quelques lignes chapitre par chapitre ; on est parti de là, on a fait ça, on en est là...
-                  Synthèse des ou de la contribution
-                  Tenter une ouverture, montrer qu'il y a de la suite possible dans les idées rassemblées et mises en œuvre tout au long du travail (=transformation)
+
+                      <div class="row">
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">📝 Contenus</h6>
+                              <p class="description">                
+                                Résumé du manuscrit/synthèse en quelques lignes chapitre par chapitre ; on est parti de là, on a fait ça, on en est là...
+                                Synthèse des ou de la contribution
+                                Tenter une ouverture, montrer qu'il y a de la suite possible dans les idées rassemblées et mises en œuvre tout au long du travail (=transformation)
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 content-card">
+                        <div class="card-big-shadow">
+                          <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                            <div class="content">
+                              <h6 class="category">✍️ Rédaction</h6>
+                              <p class="description">                
+                                <span class="display-4">Percutante</span>
+                            </p>
+                            </div>
+                          </div> <!-- end card -->
+                        </div>
+                      </div>
+                    </div>
+
+                  
 
                     <div id="giscus-container-7" class="embed-responsive embed-responsive-21by9">
                       <iframe class="embed-responsive-item" src="assets/giscus/giscus7.html" allowfullscreen></iframe>
@@ -764,7 +1193,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
 
               <div class="card"> <!--▶️|🎟️|📁--><!--🐟 et merci pour...-->
 
-                <div class="card-header" id="headingETMERCI"> <!--▶️|🎫|🤯-->
+                <div class="card-header" id="ETMERCI"> <!--▶️|🎫|🤯-->
                   <h1 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseETMERCI" aria-expanded="true" aria-controls="collapseETMERCI">
                       ...et merci pour 🐟
@@ -772,7 +1201,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseETMERCI" class="collapse" aria-labelledby="headingETMERCI" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseETMERCI" class="collapse" aria-labelledby="ETMERCI" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
                   </div> <!--⏹|🎫|👚-->
 
@@ -780,7 +1209,7 @@ Please next time add your own scheme and don't replace bootstrap defaults... */
                       <div class="col-lg-12 mx-auto">
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=xIatspadXcc?rel=0" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/xIatspadXcc?controls=0&modestbranding=0&rel=0" allowfullscreen></iframe>
 </div>
                         
                         <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
