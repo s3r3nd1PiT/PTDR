@@ -266,12 +266,11 @@
       }
 
         /* correcting overides  */
-      </style>
 
-</head>
+        .card {
+    background-color: transparent;
+}
 
-<body style="background: var(--gray-dark);" data-spy="scroll"> <!--👚-->
-    <style type="text/css" scoped>
     .scrollspy-section {
       position: relative;
       height: 333px;
@@ -279,13 +278,47 @@
       margin-bottom: 2em;
       overflow: auto;
     }
-    </style>
+
+        @media screen and (min-width: 0px) and (max-width: 768px) {
+      .row > .col-4 { display: none; }
+      .row > .col-8 { flex: 0 0 140%; max-width: 100%; }
+    }
+
+.gradient-background {
+    background: linear-gradient(180deg, #212529, #343a40, #592941, #264d8b, #395b2b, #a48422, #996025, #7f0000, #590f00, #212529, #343a40);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: gradientPTDR 666s ease infinite;
+    -moz-animation: gradientPTDR 666s ease infinite;
+    animation: gradientPTDR 666s ease infinite;
+}
+
+@-webkit-keyframes gradientPTDR {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes gradientPTDR {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes gradientPTDR {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+      </style>
+
+</head>
+
+<body class="gradient-background" data-spy="scroll"> <!--👚-->
 
     <div class="container container-sm" id="MainContainer"> <!--▶️-->
 
         <div class="search-container">
           <div class="input-group">
-            <input type="text" class="form-control" id="search-input" placeholder="🔎 lol un peu dans le PTDR... 🤣">
+            <input type="text" class="form-control" id="search-input" placeholder="🔎 lol un peu dans le PTDR et tu verras, tout sera plus KLR... 🤣">
             <div class="input-group-append">
               <button id="search-btn" class="btn btn-outline-secondary" type="button">
               <span class="search-icon">
@@ -314,10 +347,10 @@
                   </h1>
                 </div> <!--⏹|🎫|🤯-->
 
-                <div id="collapseSALUT" class="collapse show" aria-labelledby="SALUT" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+                <div id="collapseSALUT" class="collapse show" style="background: #002953;" aria-labelledby="SALUT" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
                   <div class="card-body"> <!--▶️|🎫|👚-->
 
-
+                      <img src="assets/img/nyancat.svg" class="figure-img img-fluid rounded" style="-webkit-transform:rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);" alt="...">
 
                   </div> <!--⏹|🎫|👚-->
                 </div> <!--⏹|🎫|👙-->
@@ -1486,7 +1519,10 @@
       </div> <!--⏹-->
 
       <center>
-      <a href="https://github.com/inspe-master-meef-neo/Le-BUESHCS" target="_blank" class="badge badge-pill badge-success">v.1.0</a><small><kbd>omega</kbd></small><br>
+      <kbd><abbr title="l👀k 👁️ut l👁️ud">🔎 lol</abbr></kbd>
+      <br>
+      <br>
+      <a href="https://github.com/s3r3nd1PiT/ptdr/discussions" target="_blank" class="badge badge-pill badge-success">v.1.0</a><small><kbd>omega</kbd></small>
       </center>
       <br>
       <!--🪗 this is the end of the accordion, don't be sad, we'll sing again 🎶♫🎵♪ -->
